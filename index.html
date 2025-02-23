@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaTradeX: Revolutionizing Aquaculture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #03232b;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 0;
+            /* Removed margin for seamless sections */
+        }
+
+        .water-quality-dashboard .container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .water-quality-dashboard h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .table-container,
+        .chart-container {
+            margin: 2em;
+            background-color: white;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4682b4;
+            color: white;
+        }
+
+        .chart-container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="home-page">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="AquaTradeX Logo">
+                <h1>AquaTradeX</h1>
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#market">Market</a>
+                <a href="#insights">Insights</a>
+
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Empowering Aquaculture with AI, Trading, and Traceability</h2>
+                <p>AquaTradeX introduces a B2B trading platform with blockchain-based traceability, connecting farmers, buyers, and suppliers for transparent
+                    pricing, efficient logistics, and secure transactions.</p>
+                <a href="#contact" class="button">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+<h1>Features</h1>
+            <!-- 1. Fresh Seafood -->
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="assets/fresh-seafood.jpeg" alt="Fresh Seafood" />
+                </div>
+                <div class="feature-content">
+                    <h2>Fresh, High-Quality Seafood – Taste the Ocean’s Best at Affordable Prices!</h2>
+                    <p>
+                        Indulge in the finest selection of fresh, high-quality seafood sourced directly from the ocean and delivered at prices that won’t stretch your budget. Whether you're craving the delicate sweetness of succulent shrimp, the rich, buttery texture of lobster, the firm, flaky goodness of tender fish fillets, or the irresistible brininess of oysters and scallops, we bring you the best seafood at the best prices.
+                    </p>
+                    <p>
+                        Treat yourself and your loved ones to mouthwatering seafood that’s incredibly fresh, irresistibly delicious, and priced just right. Order today and savor the best flavors of the ocean!
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. Nutritious & Affordable Sea Feeds -->
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="assets/sea-feeds.jpeg" alt="Nutritious Sea Feeds" />
+                </div>
+                <div class="feature-content">
+                    <h2>Nutritious & Affordable Sea Feeds – Boost Growth, Enhance Quality!</h2>
+                    <p>
+                        Give your aquatic stock the best with our high-quality, nutrient-rich sea feeds at prices that fit your budget! Designed to support fast growth, strong
+                        immunity, and optimal health, our sea feeds provide the perfect balance of proteins, vitamins, and essential nutrients for fish, shrimp, and other
+                        aquatic life.
+                    </p>
+                    <p>
+                        Keep your aquaculture thriving with cost-effective, high-nutrition sea feeds that maximize results without increasing costs. Order today and watch
+                        your seafood stock flourish!
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. Glow Naturally with Sea Moss & Sea Algae -->
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="assets/sea-moss-skincare.jpeg" alt="Sea Moss & Sea Algae Skincare" />
+                </div>
+                <div class="feature-content">
+                    <h2>Glow Naturally with Sea Moss & Sea Algae – Affordable, Nourishing Skincare!</h2>
+                    <p>
+                        Experience the power of the ocean with our sea moss and sea algae-infused cosmetics, designed to hydrate, rejuvenate, and nourish your skin—all at prices that won’t break the bank! Packed with minerals, antioxidants, and natural hydration, our products help you achieve radiant, youthful skin the natural way.
+                    </p>
+                    <p>
+                        Give your skin the nourishment it deserves with our affordable, ocean-inspired skincare collection. Order today and glow the natural way!
+                    </p>
+                </div>
+            </div>
+
+            <!-- 4. Track Water Quality & Temperature in Real-Time -->
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="assets/water-quality.jpeg" alt="Real-Time Water Quality Tracking" />
+                </div>
+                <div class="feature-content">
+                    <h2>Know Your Seafood’s Journey – Track Water Quality & Temperature in Real-Time!</h2>
+                    <p>
+                        Transparency matters when it comes to fresh, high-quality seafood. That’s why our app provides a real-time water quality and temperature tracking feature,
+                        ensuring that you know exactly where your seafood comes from and the conditions in which it was raised.
+                    </p>
+                    <p>
+                        With this feature, you’re not just buying seafood—you’re making an informed choice for better quality, better taste, and better health. Trust the source,
+                        taste the difference!
+                    </p>
+                </div>
+            </div>
+
+            <!-- 5. AI-Powered Fishery Advisory -->
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="assets/ai-advisory.jpeg" alt="AI-Powered Fishery Advisory" />
+                </div>
+                <div class="feature-content">
+                    <h2>Smart Farming, Smarter Seafood – AI-Powered Fishery Advisory at Your Fingertips!</h2>
+                    <p>
+                        Take the guesswork out of aquaculture with our AI-Integrated Farm Fishery Advisory feature! Designed to analyze real-time data, predict trends, and
+                        provide expert recommendations, our AI system helps you optimize fish health, water conditions, and overall farm productivity effortlessly.
+                    </p>
+                    <p>
+                        With our AI-Powered Fishery Advisory, you can farm smarter, reduce risks, and increase profitability—all while ensuring the best conditions for your
+                        seafood. Experience the future of aquaculture today!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="seafood-container">
+        <div class="seafood-container">
+            <div class="item">
+       
+                <img src="assets/Squid.jpeg" alt="Squid">
+                <p>Squid </p>
+                    <p>Rs. 550/kg</p>
+            </div>
+            <div class="item">
+                <img src="assets/Screenshot 2025-02-23 053551.jpeg" alt="Crab">
+                <p>Crab </p>
+                <p>Rs. 650/kg</p>
+            </div>
+            <div class="item">
+                <img src="assets/fish pic.jpeg" alt="Fish">
+                <p>Fish </P>
+                    <p>Rs. 300/kg</p>
+            </div>
+            <div class="item">
+                <img src="assets/Oyster.jpeg" alt="Oyster">
+                <p>Oyster </p>
+                <p>Rs. 600/kg</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For further details or inquiries, feel free to reach out to us. We're here to assist you!</p>
+            <p>Email: aquatradex@gmail.com</p>
+            <p>Phone: 9876543210</p>
+            <textarea placeholder="Leave your feedback if any!"></textarea>
+            <button type="submit" class="button">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 AquaTradeX. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</html>
